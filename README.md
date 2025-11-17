@@ -4,7 +4,7 @@ ServeRAID M1015/LSI MegaRAID 9220-8i Firmware IT mode
 
 [GA-Z77N-WIFI (rev. 1.0)](https://www.gigabyte.com/br/Motherboard/GA-Z77N-WIFI-rev-10)
 
-[Rufus](https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11p.exe)
+[Rufus Download](https://rufus.ie/pt_BR/#download) [Rufus 4.11p](https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11p.exe)
 
 [LSI-9211-8i](https://www.mediafire.com/download/6mtie10d9ud6675/LSI-9211-8i.zip)
 
