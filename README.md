@@ -4,7 +4,6 @@ ServeRAID M1015/LSI MegaRAID 9220-8i Firmware IT mode
 
 > ⚠️ **Disclaimer:** Flash the firmware entirely at your own risk. These steps may brick the controller or other hardware if applied incorrectly. Double-check every command and ensure you have backups; the authors of this guide are not responsible for any damage or data loss.
 
-
 [GA-Z77N-WIFI (rev. 1.0)](https://www.gigabyte.com/br/Motherboard/GA-Z77N-WIFI-rev-10)
 
 [Rufus Download](https://rufus.ie/pt_BR/#download) [Rufus 4.11p](https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11p.exe)
@@ -58,4 +57,24 @@ Record the adapter's SAS address before running the final command:
 
 ```bash
 sas2flash.efi -o -sasadd 500605bxxxxxxxxx
+```
+
+Reboot the server.
+
+From linux:
+
+```bash
+root@localhost:~# lspci -knn | grep -i 'sas\|scsi\|raid'
+01:00.0 Serial Attached SCSI controller [0107]: Broadcom / LSI SAS2008 PCI-Express Fusion-MPT SAS-2 [Falcon] [1000:0072] (rev 03)
+        Kernel driver in use: mpt3sas
+        Kernel modules: mpt3sas
+```
+
+
+```bash
+root@localhost:~# dmesg | grep -e 'Protocol\|FWVersion\|port enable:'
+[    1.931784] mpt2sas_cm0: LSISAS2008: FWVersion(20.00.07.00), ChipRevision(0x03)
+[    1.932158] mpt2sas_cm0: Protocol=(*Initiator*), Capabilities=(Raid,TLR,EEDP,Snapshot Buffer,Diag Trace Buffer,Task Set Full,NCQ)
+[   20.375045] mpt2sas_cm0: port enable: SUCCESS
+
 ```
