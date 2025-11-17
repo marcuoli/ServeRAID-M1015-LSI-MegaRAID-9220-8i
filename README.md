@@ -8,6 +8,10 @@ ServeRAID M1015/LSI MegaRAID 9220-8i Firmware IT mode
 
 [LSI-9211-8i.zip](https://www.mediafire.com/download/6mtie10d9ud6675/LSI-9211-8i.zip)
 
+
+> ⚠️ **Disclaimer:** Flash the firmware entirely at your own risk. These steps may brick the controller or other hardware if applied incorrectly. Double-check every command and ensure you have backups; the authors of this guide are not responsible for any damage or data loss.
+
+
 Create a FreeDOS bootable pen drive with Rufus
 
 1. Plug an empty USB stick (at least 512 MB) into the PC where you will run Rufus.
