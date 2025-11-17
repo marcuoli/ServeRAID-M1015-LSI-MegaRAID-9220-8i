@@ -57,6 +57,7 @@ Record the adapter's SAS address before running the final command:
 
 ```bash
 # sas2flash.efi -o -sasadd 500605bxxxxxxxxx
+
 # Example value taken from the label shown above
 sas2flash.efi -o -sasadd 500605b002BDC5A0
 ```
