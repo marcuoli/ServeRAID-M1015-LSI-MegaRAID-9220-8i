@@ -6,7 +6,9 @@ ServeRAID M1015/LSI MegaRAID 9220-8i Firmware IT mode
 
 [Rufus](https://github.com/pbatard/rufus/releases/download/v4.11/rufus-4.11p.exe)
 
-[LSI-9211-8i.zip](https://www.mediafire.com/download/6mtie10d9ud6675/LSI-9211-8i.zip)
+[LSI-9211-8i](https://www.mediafire.com/download/6mtie10d9ud6675/LSI-9211-8i.zip)
+
+[LSI-Utils (megarec.exe & sbrempty.bin)](https://anthony-paul.com/wp-content/uploads/2016/10/LSI-Utils.zip)
 
 
 > ⚠️ **Disclaimer:** Flash the firmware entirely at your own risk. These steps may brick the controller or other hardware if applied incorrectly. Double-check every command and ensure you have backups; the authors of this guide are not responsible for any damage or data loss.
