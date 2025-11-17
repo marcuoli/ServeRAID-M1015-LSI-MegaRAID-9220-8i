@@ -70,11 +70,10 @@ root@localhost:~# lspci -knn | grep -i 'sas\|scsi\|raid'
         Kernel modules: mpt3sas
 ```
 
-
-```bash
-root@localhost:~# dmesg | grep -e 'Protocol\|FWVersion\|port enable:'
+<!-- markdownlint-disable MD033 -->
+<pre><code>root@localhost:~# dmesg | grep -e 'Protocol\|FWVersion\|port enable:'
 [    1.931784] mpt2sas_cm0: LSISAS2008: FWVersion(20.00.07.00), ChipRevision(0x03)
-[    1.932158] mpt2sas_cm0: Protocol=(*Initiator*), Capabilities=(Raid,TLR,EEDP,Snapshot Buffer,Diag Trace Buffer,Task Set Full,NCQ)
+[    1.932158] mpt2sas_cm0: Protocol=(<mark>Initiator</mark>), Capabilities=(Raid,TLR,EEDP,Snapshot Buffer,Diag Trace Buffer,Task Set Full,NCQ)
 [   20.375045] mpt2sas_cm0: port enable: SUCCESS
-
-```
+</code></pre>
+<!-- markdownlint-enable MD033 -->
