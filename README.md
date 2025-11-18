@@ -56,10 +56,10 @@ Record the adapter's SAS address before running the final command:
 3. Substitute that value for the placeholder in the command below so the controller keeps its factory-assigned address.
 
 ```bash
-# sas2flash.efi -o -sasadd 500605bxxxxxxxxx
+# sas2flash.efi -o -sasadd 500605Bxxxxxxxxx
 
 # Example value taken from the label shown above
-sas2flash.efi -o -sasadd 500605b002BDC5A0
+sas2flash.efi -o -sasadd 500605B002BDC5A0
 ```
 
 Reboot the server.
